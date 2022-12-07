@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <link rel="icon" href="images/icon1.png" type="image/png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48;
+          color: white;
+        }
+        .material-symbols-outlined:hover{
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <body>
+        <div class="navbar">
+            <img src="images/icon1.png" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" id="navabout">About us</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                    <li>
+                    <span class="material-symbols-outlined" id="mode" onclick="myFunction()">
+                        light_mode
+                        </span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="aboutcontainer">
+            <div class="aboutcard">
+                <div class="aboutcontent">
+                    <h2>About Us</h2>
+                    <h3>It is a website created by two students :'Mihir Chandra' and 'Vivek Sah' of Lovely Professional university under a given project. It is a dummy website for Movies which can be used as a website for business to display the all the web series and movies of every OTT platform.So that people don't have to download so many apps for watching movies on different platform and can also be used as website for buying the subscription.</h3>
+                </div>
+            </div>
+        </div>
+        <script>
+            var mode = document.getElementById("mode");
+           function myFunction() {
+               var element = document.body;
+              
+               element.classList.toggle("dark-mode");
+               if(mode.innerHTML === "dark_mode") {
+                   mode.innerHTML = "light_mode";
+               }
+               else mode.innerHTML = "dark_mode";
+               console.log(mode.innerHTML);
+               // var element2= document.getElementById("home");
+               // if(element2.style.display != 'none'){
+               //     element2.style.display = 'none'
+               // }
+               // else{
+               //     element2.style.display = 'block'
+               // }
+           }
+       </script>
+    </body>
+</body>
+</html>
